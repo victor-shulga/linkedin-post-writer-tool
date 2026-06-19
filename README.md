@@ -1,6 +1,6 @@
 # LinkedIn Post Writer — free tool
 
-A free tool (lead magnet). User gives an idea → picks
+A free tool. User gives an idea → picks
 post type / format / angle → gets a publish-ready LinkedIn post in **their own
 voice**, formatted aggressively (ялинки, ragged rhythm). Powered by Claude
 Sonnet 4.6.
