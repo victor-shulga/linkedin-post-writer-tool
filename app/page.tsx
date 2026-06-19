@@ -6,10 +6,8 @@ export default function Home() {
       {/* Header */}
       <header style={{ borderBottom: "1px solid var(--border-soft)", background: "var(--surface)" }}>
         <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "15px 20px" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
-            <div style={{ width: 26, height: 26, borderRadius: 7, background: "var(--coral)" }} />
-            <span style={{ fontWeight: 800, letterSpacing: ".3px" }}>VICTOR SHULGA</span>
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.png" alt="Victor Shulga" style={{ height: 30, width: "auto" }} />
           <div style={{ display: "flex", alignItems: "center", gap: 22 }}>
             <a href="#how" style={{ fontSize: 13.5, color: "var(--grey)", fontWeight: 600 }}>Як працює</a>
             <a href="#faq" style={{ fontSize: 13.5, color: "var(--grey)", fontWeight: 600 }}>FAQ</a>
