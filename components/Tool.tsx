@@ -2,6 +2,10 @@
 
 import { useState } from "react";
 
+// basePath prefix (set in next.config.mjs) so API calls resolve when the app is
+// served under victorshulga.com/free-tools/linkedin-post-writer.
+const BP = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const FORMATS = [
   { v: "text", label: "Текст" },
   { v: "text_image", label: "Текст + фото" },
@@ -30,7 +34,7 @@ export default function Tool() {
     setPost("");
     setUnlocked(false);
     try {
-      const res = await fetch("/api/generate", {
+      const res = await fetch(`${BP}/api/generate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ idea, postType, format, voiceSample, language: "Ukrainian" }),
@@ -51,7 +55,7 @@ export default function Tool() {
       return;
     }
     setError("");
-    fetch("/api/lead", {
+    fetch(`${BP}/api/lead`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),

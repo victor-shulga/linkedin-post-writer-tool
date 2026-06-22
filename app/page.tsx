@@ -1,5 +1,8 @@
 import Tool from "@/components/Tool";
 
+// basePath prefix — raw <img> tags aren't auto-prefixed like next/image.
+const BP = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function Home() {
   return (
     <>
@@ -7,7 +10,7 @@ export default function Home() {
       <header style={{ borderBottom: "1px solid var(--border-soft)", background: "var(--surface)" }}>
         <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "15px 20px" }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.png" alt="Victor Shulga" style={{ height: 30, width: "auto" }} />
+          <img src={`${BP}/logo.png`} alt="Victor Shulga" style={{ height: 30, width: "auto" }} />
           <div style={{ display: "flex", alignItems: "center", gap: 22 }}>
             <a href="#how" style={{ fontSize: 13.5, color: "var(--grey)", fontWeight: 600 }}>Як працює</a>
             <a href="#faq" style={{ fontSize: 13.5, color: "var(--grey)", fontWeight: 600 }}>FAQ</a>
