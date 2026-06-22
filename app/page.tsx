@@ -132,7 +132,7 @@ export default function Home() {
           <p style={{ margin: "10px auto 20px", maxWidth: 440, color: "#B9B6B0", fontSize: 15 }}>
             Цей тул — частина методу. Розберемо вашу GTM-стратегію на дзвінку.
           </p>
-          <a href="#" className="btn btn-primary">Book a call →</a>
+          <a href="https://tidycal.com/victor-shulga/60-minute-meeting" target="_blank" rel="noopener" className="btn btn-primary">Book a call →</a>
         </div>
       </section>
 
