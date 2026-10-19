@@ -53,3 +53,7 @@ Vercel: import repo → add env vars → deploy. Point a subdomain
 MVP scaffold. Done: prompt engine, generate API route, minimal UI, schema.
 TODO: email-gate UI, Supabase Auth, n8n nurture hook, the next tool
 (Infographic Generator — needs an SVG→PNG renderer, separate build).
+
+---
+
+Built by [Victor Shulga](https://victorshulga.com), Fractional CRO for B2B service companies. Full skill stack: [victorshulga.com/stack](https://victorshulga.com/stack/).
